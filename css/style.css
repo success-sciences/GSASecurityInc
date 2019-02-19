@@ -371,18 +371,18 @@ a:hover {
 
 header.masthead {
     background: url(../img/bannersized.jpg) center center no-repeat;
-    height: 600px;
-    margin-top: 130px;
+    height: 618px;
+    margin-top: 90px;
     text-align: center;
-    padding-top: 130px
+    padding-top: 100px
 }
 
 header.masthead h3,
 header.masthead p {
-    font-size: 34px;
+    font-size: 28px;
     text-align: center;
-    padding-right: 30px;
-    line-height: 30px
+    padding-right: 25px;
+    line-height: 25px
 }
 
 .appBg .rightSecBox,
