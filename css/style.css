@@ -981,8 +981,8 @@ section h2 {
 
 .second-column {
     width: 33%;
-    padding: 0 10px 0 0;
-    float: center
+    padding: 5px 10px 10px 0px;
+    float: right
 }
 
 @media only screen and (max-width:800px) {
