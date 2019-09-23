@@ -35,9 +35,11 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/demo.js"></script>
+	<script src="js/modal.js"></script>
     <!-- Plugin CSS <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"> -->
     <link href="css/particals.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
+	
 	
 	<style>
 		table, th, td 
@@ -57,11 +59,11 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#page-top">Home</a> </li>
-                    <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#services">Summary</a> </li>
-                    <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#products">Services</a> </li>
-                    <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Partnerships</a> </li>
+                    <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#services">About Us</a> </li>
+                    <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#products">Products</a> </li>
+                    <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Manufacturer Certifications</a> </li>
                     <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#partners">Customers</a> </li>
-                    <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#clients">Contact</a> </li>
+                    <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#clients">Contact Us</a> </li>
                 </ul>
             </div>
         </div>
@@ -70,26 +72,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 ml-auto">
-                    <h1>Reimagine, Redesign, Execute</h1></br></br>
-					<h1>The Security Solution you need for Tomorrow.</h1></br>
-					<h1>Reducing Your Risk</h1></br>
-
+                    <h1>When it comes to your business, the one thing that shouldn’t keep you up at night is the physical security of your premises.</h1></br></br>
+					<h1>That's where the GSA Security, Inc comes in. We have 10+ years of experience outfitting local properties of all sizes with cutting edge security infrastructure—from access control systems, video surveillance systems, high-end cameras, to repair and replacement services.</h1></br>
+					<h1>We welcome the opportunity to meet with you and provide a no obligation assessment of your security options and vulnerabilities.</h1></br>
                 </div>
             </div>
         </div>
     </header>
     <section class="portfolio" id="services">
         <div class="container">
-			<h1 class="text-center mb-0">Company Summary</h1>
+			<h1 class="text-center mb-0">About Us</h1>
 			<table>
 				<td>
 					</br><p>GSA Security, Inc is a low voltage electrical contractor <a href="pdf/GSALicense8-2020.pdf" target="_blank">(FL License #ES12000416)</a> that provides physical security solutions including voice & data cabling, camera systems, card access systems, radar solutions, and assessment consultation services for very diverse clients in Florida.</p>
-					<p>Formed in 2005, GSA has performed extensive work for high profile customers in Hillsborough, Pinellas, Polk, Pasco, and Brevard counties.  Some clients worth noting include Port Tampa Bay, Hillsborough County Public Schools, City of Clearwater, University of South Florida, Port Canaveral and other private businesses.</p>
-					<p>GSA has also invested in becoming a preferred Authorized Partner for solutions provided by AXIS Communications, exacqVision, Genetec, NICE, and milestone.  Our professional technicians are trained and certified to enhance product effectiveness. </p>
-					<p>We welcome the opportunity to meet with you and provide a no obligation assessment of your security options and vulnerabilities.</p>
+					<p>Formed in 2005, GSA has performed extensive work for high profile customers in Hillsborough, Pinellas, Polk, Pasco, and Brevard counties. Some client’s worth noting include Port Tampa Bay, Hillsborough County Public Schools, City of Clearwater, University of South Florida, Port Canaveral and other private businesses.</p>
+					<p>GSA has also invested in becoming a preferred <strong>Authorized Partner</strong> for solutions provided by AXIS Communications (staffed with 5 AXIS Certified Professionals), exacqVision, Genetec, NICE, and milestone. Our professional technicians are trained and certified to enhance product effectiveness.</p>
 				</td>
 			<td valign="center" align="center">
-                <img src="img/Building.jpg" alt="GSA logo">
+                <img src="img/aboutgsasmall.png" alt="GSA logo">
 			</td>
 			</table>
         </div>
@@ -97,16 +97,39 @@
     
 	<section class="applicatioFor bg-primary text-white mb-0" id="products">
         <div class="container">
-            <h2 class="text-center text-white">Products and Services</h2>
+            <h1 class="text-center text-white">Products and Consulting Services</h1>
             <div class="row">
                 <div class="col-lg-5 ml-auto"> </div>
                 <div class="col-lg-7 mr-auto rightSecBox">
-                    <h3>Security Cameras and Video Surveillance Systems, Card Access Systems Security, Radar...</h3>
-					<a>Structured Cabling</a> <a class="color1">Video Surveillance</a>
-					<a class="color2">Access Control</a> <a class="color3">Fiber Optics</a>
-                    <br><a class="color4">Card Entry Systems</a><a>Proximity Card Access Control</a>
-                    <br><a class="color1">Consulting</a> <a class="color2">Risk Management</a><a class="color4">Design & Build</a>
-					<a class="color1">Maintenance</a>
+				<br><br>
+                    <button id="myBtn"><a>Structured Cabling</a></button>
+					<div id="myModal" class="modal">
+
+						<!-- Modal content -->
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<p>Some text in the Modal..</p>
+						</div>					
+					</div>
+					
+
+					<a class="color1">Video Surveillance</a>
+					<a class="color4">Access Control</a>
+					<a class="color3">Discretionary Access Control (DAC)</a>
+					<a class="color2">Card Entry Systems </a>
+                    <a class="color4">Mandatory Access Control (MAC)</a>
+					<a>Role Based Access Control (RBAC)</a>
+					<a class="color1">Risk Management</a>
+					<a class="color3">Design / Build</a>
+                    
+					<a class="color1">Card Entry Systems </a> 
+					<a class="color2">Proximity Card Access Control</a>
+					<a class="color4">Fiber Optics</a>
+					<a>Maintenance</a>
+					<br><br><br>
+					
+                    <h2>Click on any of the services or products above to learn more.</h2>
+                    					
                 </div>
             </div>
         </div>
