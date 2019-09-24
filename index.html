@@ -425,7 +425,18 @@
         </div>
     </div>
 	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>       
+    <script src="js/jquery.easing.min.js"></script>
+	<script>
+        $(".closeModal").click(function() {
+            $(".modal").modal("hide");
+        });
+        $(document).ready(function() {
+            $('#recommendations').carousel({
+                pause: true,
+                interval: false,
+            });
+        }); // invoke the carousel $('#myCarousel').carousel({interval: 3000}).on('slide.bs.carousel', function (){document.getElementById('player1').pause(); document.getElementById('player2').pause(); document.getElementById('player3').pause(); document.getElementById('player4').pause();}); /* SLIDE ON CLICK */
+    </script>	
 	
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
