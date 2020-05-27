@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Disallow: /Personal%20Case%20Study.pdf
+Disallow: /pdf/GSALicense8-2020.pdf
+Allow: /
+
+Sitemap: https://gsasecurityinc.com/sitemap.xml
